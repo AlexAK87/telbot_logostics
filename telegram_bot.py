@@ -52,6 +52,6 @@ def callback_worker(call):
         bot.send_message(call.message.chat.id, 'Запомню : )');
     else:
         call.data == "no"
-        #... #переспрашиваем
+        bot.send_message(call.message.chat.id, 'Напиши /reg'); #... #переспрашиваем
 
 bot.polling(none_stop=True, interval=0) 
